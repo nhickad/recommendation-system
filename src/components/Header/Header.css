@@ -1,0 +1,84 @@
+.header-content{
+    min-height: 75vh;
+    background: linear-gradient(rgba(141, 39, 174, 0.3), rgba(141, 39, 174, 0.5)), url("../../images/test.jpg") center/cover no-repeat;
+    flex-direction: column;
+}
+.header-title{
+    font-size: 4.2rem;
+}
+.header-text{
+    margin-top: -1.8rem;
+    margin-bottom: 2.8rem;
+    opacity: 0.8;
+    max-width: 770px;
+}
+
+.tab-action-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.tab-action {
+    display: flex;
+    padding: 1rem 2rem;
+    background: #eee;
+    border-radius: 1rem;
+    font-weight: 700;
+}
+
+
+.tab-action:not(.active):hover {
+    background-color: #ccc;
+    transition: all 0.3s ease-in-out;
+}
+
+.tab-action.active {
+    background-color: blue;
+    color: white;
+}
+.tab-action.active:hover {
+    background-color: #1c1cba;
+
+}
+.tab-options {
+    padding: 1rem 2rem;
+}
+
+.tab-option {
+    padding: 2rem;
+}
+
+.tab-action:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.recos {
+    display: flex;
+    flex-direction: column;
+}
+
+.recos button {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: #eee;
+    border-radius: 1rem;
+    font-weight: 700;
+}
+
+.recos button:hover {
+    background-color: #ccc;
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media (max-width: 767px) {
+    .header-controls {
+        width: 100%;
+    }
+
+    .recos {
+        padding: 0 1rem;
+        margin: auto;
+    }
+}
